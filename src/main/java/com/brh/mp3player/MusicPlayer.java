@@ -7,15 +7,14 @@ import java.io.File;
 
 public class MusicPlayer {
 
+    private boolean mute;
     private MediaPlayer mp;
 
     public void play( String path ){
-
         Media media = new Media( new File(path).toURI().toString() );
         mp = new MediaPlayer( media );
         mp.stop();
         mp.play();
-
     }
 
     public void stop(){
@@ -28,5 +27,8 @@ public class MusicPlayer {
         mp.setVolume( vol );
     }
 
-
+    public void mute(){
+        mute = !mute;
+        mp.setMute(mute);
+    }
 }

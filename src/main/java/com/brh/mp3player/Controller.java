@@ -43,4 +43,9 @@ public class Controller {
     protected void onVolume(){
         musicPlayer.setVolume( volumeSlider.getValue() );
     }
+
+    @FXML
+    protected void onMute(){
+        musicPlayer.mute();
+    }
 }
