@@ -18,7 +18,6 @@ public class Controller {
     @FXML
     private Slider volumeSlider;
 
-
     @FXML
     protected void onFile(){
         Stage stage = (Stage) fileLabel.getScene().getWindow();
