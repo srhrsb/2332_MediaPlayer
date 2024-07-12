@@ -21,7 +21,6 @@ public class Controller {
 
     @FXML
     protected void onFile(){
-
         Stage stage = (Stage) fileLabel.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(stage);
