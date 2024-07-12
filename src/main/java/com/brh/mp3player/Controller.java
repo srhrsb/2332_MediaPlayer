@@ -44,6 +44,6 @@ public class Controller {
 
     @FXML
     protected void onMute(){
-        musicPlayer.mute();
+        musicPlayer.toggleMute();
     }
 }

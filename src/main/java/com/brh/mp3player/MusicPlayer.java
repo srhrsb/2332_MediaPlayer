@@ -27,7 +27,7 @@ public class MusicPlayer {
         mp.setVolume( vol );
     }
 
-    public void mute(){
+    public void toggleMute(){
         mute = !mute;
         mp.setMute(mute);
     }
