@@ -7,8 +7,20 @@ import java.io.File;
 
 public class MusicPlayer {
 
+    private static MusicPlayer instance;
     private boolean mute;
     private MediaPlayer mp;
+
+    private MusicPlayer(){}
+
+    public static synchronized MusicPlayer getInstance(){
+
+        if(instance == null){
+            instance = new MusicPlayer();
+        }
+
+        return instance;
+    }
 
     public void play( String path ){
         Media media = new Media( new File(path).toURI().toString() );

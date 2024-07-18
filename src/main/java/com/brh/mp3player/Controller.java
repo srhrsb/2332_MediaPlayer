@@ -10,7 +10,7 @@ import java.io.File;
 
 public class Controller {
 
-    private final MusicPlayer musicPlayer = new MusicPlayer();
+    private final MusicPlayer musicPlayer = MusicPlayer.getInstance();
 
     @FXML
     private Label fileLabel;
